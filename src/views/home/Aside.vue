@@ -27,17 +27,9 @@
                             <i class="el-icon-star-off"></i>
                             <span>物料管理</span>
                         </template>
-                        <el-menu-item index="Echarts" @click="$router.push({ name: 'Echarts' })">
-                            <i class="el-icon-s-data"></i>
-                            <span slot="title">echarts</span>
-                        </el-menu-item>
                         <el-menu-item index="Detail" @click="$router.push({ name: 'Detail' })">
                             <i class="el-icon-document"></i>
                             <span slot="title">物料详情</span>
-                        </el-menu-item>
-                        <el-menu-item index="Baidu" @click="$router.push({ name: 'Baidu' })">
-                            <i class="el-icon-document"></i>
-                            <span slot="title">baidu</span>
                         </el-menu-item>
                     </el-submenu>
 					<DynamicMenu v-for="menu in dynamicRoutes" :key="menu.meta.menuId" :menu="menu"></DynamicMenu>

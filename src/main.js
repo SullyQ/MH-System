@@ -29,5 +29,8 @@ new Vue({
   router,
   store,
   i18n,
+  beforeCreate() {
+		Vue.prototype.$bus = this  //安装全局事件总线，$bus就是当前应用的vm
+  },
   render: h => h(App)
 }).$mount('#app')

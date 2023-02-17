@@ -54,30 +54,12 @@ const routes = [{
 				}
 			},
 			{
-				path: '/Home/Demo/Echarts',
-				name: 'Echarts',
-				component: () => import('@/views/menu/Echarts.vue'),
-				meta: {
-					isRouter: true,
-					isTab: true
-				}
-			},
-			{
 				path: '/Home/material/detail',
 				name: 'Detail',
-				component: () => import('@/views/menu/material/detail/detail.vue'),
+				component: () => import('@/views/menu/material/detail/Detail.vue'),
 				meta: {
 					isRouter: true,
 					isTab: true
-				}
-			},
-			{
-				path: '/Home/Demo/Baidu',
-				name: 'Baidu',
-				meta: {
-					isRouter: true,
-					isTab: true,
-					iframeUrl: '@/test.html'
 				}
 			},
 			// 路由匹配失败时，跳转到 404 页面

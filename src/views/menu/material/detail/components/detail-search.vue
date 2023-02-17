@@ -2,25 +2,25 @@
   <div class="search">
     <el-descriptions title="查询"></el-descriptions>
     <el-form :inline="true" :model="formInline">
-    <el-row :gutter="20">
-        <el-col :sm="24" :md="10" :lg="10">
-          <el-form-item label="物料编码">
-            <el-input v-model="formInline.code" placeholder="" style="width: 180%" clearable></el-input>
-          </el-form-item>
-        </el-col>
+      <el-row :gutter="20">
+          <el-col :sm="24" :md="10" :lg="10">
+            <el-form-item label="物料编码">
+              <el-input v-model="formInline.code" placeholder="" style="width: 180%" clearable></el-input>
+            </el-form-item>
+          </el-col>
 
-        <el-col :sm="24" :md="10" :lg="10">
-          <el-form-item label="物料名称">
-            <el-input v-model="formInline.name" placeholder="" style="width: 180%" clearable></el-input>
-          </el-form-item>
-        </el-col>
+          <el-col :sm="24" :md="10" :lg="10">
+            <el-form-item label="物料名称">
+              <el-input v-model="formInline.name" placeholder="" style="width: 180%" clearable></el-input>
+            </el-form-item>
+          </el-col>
 
-        <el-col :sm="24" :md="10" :lg="10">
-          <el-form-item label="物料类别">
-            <el-input v-model="formInline.category" placeholder="" style="width: 180%" clearable></el-input>
-          </el-form-item>
-        </el-col>
-    </el-row>
+          <el-col :sm="24" :md="10" :lg="10">
+            <el-form-item label="物料类别">
+              <el-input v-model="formInline.category" placeholder="" style="width: 180%" clearable></el-input>
+            </el-form-item>
+          </el-col>
+      </el-row>
     </el-form>
 
     <div class="btns" style="float: right;">

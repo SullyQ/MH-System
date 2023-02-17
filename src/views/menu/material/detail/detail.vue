@@ -1,34 +1,31 @@
 <template>
     <div class="detail">
-        <!-- <span class="title">物料详情页</span>
-        <el-divider/> -->
         <el-card>
           <detailSearch />
         </el-card>
         <el-card>
           <detailContent />
         </el-card>
-        
+        <detailInfo />
     </div>
 </template>
 
 <script>
 import detailContent from './components/detail-content.vue';
 import detailSearch from './components/detail-search.vue';
+import detailInfo from './components/detail-info.vue'
 
 export default {
     data() {
       return {
-        formInline: {
-          user: '',
-          region: ''
-        }
+        
       }
     },
     components: {
-    detailContent,
-    detailSearch
-},
+      detailContent,
+      detailSearch,
+      detailInfo
+    },
 
     methods: {
       onSubmit() {
